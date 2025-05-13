@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wroom Wroom!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body style="display:flex; width: 100%; justify-content: center; align-items: center; height: 100vh;">
+	<div class="main">
+
+		<h1>Motor Control</h1>
+		<div class="container">
+			<button class="button" onclick="forwards500()">GO</button>
+
+		<div class="section-box">
+			<h2>Encoder Data</h2>
+			<div id="encoderText">0 mm/pulse</div>
+			<p></p>
+			<button class="button small-button" onclick="forwards20()">Encoder Calibration</button>
+		</div>
+
+		<div class="section-box">
+			<h2>Lidar Data</h2>
+			<div id="lidarText">0 cm</div>
+			<p></p>
+			<div id="warning"></div>
+		</div>
+
+		<div class="section-box">
+			<h2>
+				<div class="compassValueContainer">
+					Compass Value: <span id="currentCompassValue">0 ° N</span>
+				</div>
+			</h2>
+		</div>
+
+		<div class="section-box">
+			<h2>Detected Color:</h2>
+			<div id="detectedColor">Here is the sample color</div>
+		</div>
+
+		<div class="container">
+			<button class="logoutbutton" onclick="logoutButton()">Logout</button>
+		</div>
+	</div>
+
+</body>
+</html>
